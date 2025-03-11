@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Learning Roadmap: HTML, CSS, JavaScript</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #2c3e50;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Progress Bar Container */
+        .progress-bar-container {
+            width: 100%;
+            height: 20px;
+            background-color: #e4e7eb;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            background-color: #4caf50;
+            border-radius: 10px;
+        }
+
+        .checkbox-label {
+            display: block;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #34495e;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Section Colors */
+        .beginner {
+            background-color: #f0f8ff;
+        }
+
+        .intermediate {
+            background-color: #fff3e0;
+        }
+
+        .advanced {
+            background-color: #e8f5e9;
+        }
+
+        .section-subheading {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            font-weight: bold;
+        }
+
+        /* Checkbox Container Styles */
+        .checkbox-container {
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        /* Overall Progress Section */
+        .overall-progress {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        /* Hover Effects */
+        .checkbox-label:hover {
+            color: #1abc9c;
+            cursor: pointer;
+        }
+
+        .checkbox-label input:checked + span {
+            text-decoration: line-through;
+            color: #95a5a6;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Comprehensive Learning Roadmap: HTML, CSS, and JavaScript</h1>
+
+        <!-- HTML Section -->
+        <div class="section beginner">
+            <h2 style="background-color: #3498db; color: white; padding: 15px; border-radius: 10px;">HTML - Beginner</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="html-progress"></div>
+            </div>
+            <div class="section-subheading">Basics of HTML</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="html1" onchange="updateProgress()"> Basic Structure (html, head, body)</label>
+                <label class="checkbox-label"><input type="checkbox" id="html2" onchange="updateProgress()"> Headings and Paragraphs</label>
+                <label class="checkbox-label"><input type="checkbox" id="html3" onchange="updateProgress()"> Lists and Links</label>
+            </div>
+            <div class="section-subheading">Working with Images & Forms</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="html4" onchange="updateProgress()"> Adding Images</label>
+                <label class="checkbox-label"><input type="checkbox" id="html5" onchange="updateProgress()"> Creating Forms (Input, Select, Button)</label>
+            </div>
+            <div class="section-subheading">Semantic HTML</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="html6" onchange="updateProgress()"> Using Semantic Tags (article, section, nav)</label>
+                <label class="checkbox-label"><input type="checkbox" id="html7" onchange="updateProgress()"> Accessibility & SEO Best Practices</label>
+            </div>
+        </div>
+
+        <!-- CSS Section -->
+        <div class="section intermediate">
+            <h2 style="background-color: #ff7043; color: white; padding: 15px; border-radius: 10px;">CSS - Beginner to Intermediate</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="css-progress"></div>
+            </div>
+            <div class="section-subheading">CSS Fundamentals</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="css1" onchange="updateProgress()"> Selectors (Class, ID, Element)</label>
+                <label class="checkbox-label"><input type="checkbox" id="css2" onchange="updateProgress()"> Styling Text (Fonts, Colors)</label>
+                <label class="checkbox-label"><input type="checkbox" id="css3" onchange="updateProgress()"> Box Model (Margin, Padding, Borders)</label>
+            </div>
+            <div class="section-subheading">Layout & Positioning</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="css4" onchange="updateProgress()"> Flexbox (Containers, Items)</label>
+                <label class="checkbox-label"><input type="checkbox" id="css5" onchange="updateProgress()"> Grid Layout (Basic Grid)</label>
+            </div>
+            <div class="section-subheading">CSS Advanced</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="css6" onchange="updateProgress()"> CSS Variables</label>
+                <label class="checkbox-label"><input type="checkbox" id="css7" onchange="updateProgress()"> Transitions and Animations</label>
+                <label class="checkbox-label"><input type="checkbox" id="css8" onchange="updateProgress()"> Responsive Design (Media Queries)</label>
+            </div>
+            <div class="section-subheading">CSS Preprocessors & Frameworks</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="css9" onchange="updateProgress()"> Sass/LESS Basics</label>
+                <label class="checkbox-label"><input type="checkbox" id="css10" onchange="updateProgress()"> Bootstrap/TailwindCSS</label>
+            </div>
+        </div>
+
+        <!-- JavaScript Section -->
+        <div class="section advanced">
+            <h2 style="background-color: #8e44ad; color: white; padding: 15px; border-radius: 10px;">JavaScript - Intermediate to Advanced</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="js-progress"></div>
+            </div>
+            <div class="section-subheading">Core JavaScript Concepts</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="js1" onchange="updateProgress()"> Variables (let, const, var)</label>
+                <label class="checkbox-label"><input type="checkbox" id="js2" onchange="updateProgress()"> Data Types (Strings, Numbers, Arrays, Objects)</label>
+                <label class="checkbox-label"><input type="checkbox" id="js3" onchange="updateProgress()"> Functions (Declaration, Expressions, Arrow)</label>
+            </div>
+            <div class="section-subheading">Advanced JavaScript Concepts</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="js4" onchange="updateProgress()"> Conditionals (if, else, switch)</label>
+                <label class="checkbox-label"><input type="checkbox" id="js5" onchange="updateProgress()"> Loops (for, while, forEach)</label>
+                <label class="checkbox-label"><input type="checkbox" id="js6" onchange="updateProgress()"> DOM Manipulation (Query, Modify Elements)</label>
+            </div>
+            <div class="section-subheading">Asynchronous JavaScript</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="js7" onchange="updateProgress()"> Event Listeners</label>
+                <label class="checkbox-label"><input type="checkbox" id="js8" onchange="updateProgress()"> Promises & Async/Await</label>
+            </div>
+            <div class="section-subheading">Advanced JavaScript & Tools</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="js9" onchange="updateProgress()"> Object-Oriented Programming (OOP)</label>
+                <label class="checkbox-label"><input type="checkbox" id="js10" onchange="updateProgress()"> ES6+ Features (Destructuring, Spread, Template Literals)</label>
+                <label class="checkbox-label"><input type="checkbox" id="js11" onchange="updateProgress()"> Error Handling (try, catch, throw)</label>
+            </div>
+            <div class="section-subheading">JavaScript Libraries & Frameworks</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="js12" onchange="updateProgress()"> Introduction to React.js or Vue.js</label>
+                <label class="checkbox-label"><input type="checkbox" id="js13" onchange="updateProgress()"> Introduction to jQuery</label>
+            </div>
+        </div>
+
+        <!-- General Web Development (Optional) -->
+        <div class="section">
+            <h2 style="background-color: #2ecc71; color: white; padding: 15px; border-radius: 10px;">General Web Development Skills</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="general-progress"></div>
+            </div>
+            <div class="section-subheading">Version Control</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="general1" onchange="updateProgress()"> Git Basics (Commit, Push, Pull)</label>
+                <label class="checkbox-label"><input type="checkbox" id="general2" onchange="updateProgress()"> GitHub for Collaboration</label>
+            </div>
+            <div class="section-subheading">Deployment</div>
+            <div class="checkbox-container">
+                <label class="checkbox-label"><input type="checkbox" id="general3" onchange="updateProgress()"> Hosting with GitHub Pages</label>
+                <label class="checkbox-label"><input type="checkbox" id="general4" onchange="updateProgress()"> Deployment with Netlify or Vercel</label>
+            </div>
+        </div>
+
+        <!-- Overall Progress -->
+        <div class="overall-progress" id="overall-progress">
+            Overall Progress: 0%
+        </div>
+    </div>
+
+    <script>
+        function updateProgress() {
+            let totalTasks = document.querySelectorAll('input[type="checkbox"]').length;
+            let completedTasks = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            let progress = (completedTasks / totalTasks) * 100;
+            
+            // Update individual progress bars
+            document.getElementById('html-progress').style.width = (document.querySelectorAll('#html1:checked, #html2:checked, #html3:checked, #html4:checked, #html5:checked, #html6:checked, #html7:checked').length / 7) * 100 + '%';
+            document.getElementById('css-progress').style.width = (document.querySelectorAll('#css1:checked, #css2:checked, #css3:checked, #css4:checked, #css5:checked, #css6:checked, #css7:checked, #css8:checked, #css9:checked, #css10:checked').length / 10) * 100 + '%';
+            document.getElementById('js-progress').style.width = (document.querySelectorAll('#js1:checked, #js2:checked, #js3:checked, #js4:checked, #js5:checked, #js6:checked, #js7:checked, #js8:checked, #js9:checked, #js10:checked, #js11:checked, #js12:checked, #js13:checked').length / 13) * 100 + '%';
+            document.getElementById('general-progress').style.width = (document.querySelectorAll('#general1:checked, #general2:checked, #general3:checked, #general4:checked').length / 4) * 100 + '%';
+
+            // Update overall progress
+            document.getElementById('overall-progress').textContent = 'Overall Progress: ' + Math.round(progress) + '%';
+        }
+    </script>
+
+</body>
+</html>
